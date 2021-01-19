@@ -14,8 +14,12 @@ set :session_secret, 'super secret'
     erb(:index)
   end
 
-  get '/named-cat' do
+  post '/named-cat' do
     p params
     @name = params[:name]
     erb(:index)
+  end
+
+  get '/cat-name' do
+    erb(:catname)
   end
