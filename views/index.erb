@@ -1,4 +1,10 @@
-<h1> My name is Salar <%= @name %></h1>
+<%if @name %>
+<h1> My name is Salar <%=@name %></h1>
+<%end%>
 <div style='border: 3px solid green'>
+<form action="/named-cat">
+    <input type="text" name="name">
+    <input type="submit" value="Submit">
+   </form>
 <img src='https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'>
 </div>
